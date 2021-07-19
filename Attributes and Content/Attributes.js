@@ -40,3 +40,9 @@ $("#text").removeAttr("border");
 
 $("#img").attr("alt", "Demo");
 alert($("#img").attr("src"));
+
+//What is the output of this code if the HTML code is <p>a<span>b</span></p>?
+//ما هو ناتج هذا الكود إذا كان كود HTML هو <p>a<span>b</span> </p>?
+$(function() {
+    $("p span").text("a");
+  });

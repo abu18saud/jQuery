@@ -52,3 +52,8 @@ The above mentioned syntax for creating elements can be used to create any new H
 
 var a = $("<span></span>");
 $("#txt").append(a);
+
+//Fill in the blanks to create a new div element with the text "Hi" and insert it before the element with id="demo".
+//املأ الفراغات لإنشاء عنصر div جديد بالنص "Hi" وأدخله قبل العنصر بالمعرف = "demo".
+var a = $("<div></div>").text("Hi");
+$("#demo").before(a);
