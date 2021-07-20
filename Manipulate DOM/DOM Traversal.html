@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <style>
+        body,
+        div,
+        ul,
+        li {
+            padding: 5px;
+            margin: 15px;
+        }
+
+        p {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>body
+    <div style="width:300px;">div
+        <ul>ul
+            <li>li
+                <p>paragraph</p>
+            </li>
+        </ul>
+    </div>
+    <p>a</p>
+    <p>b</p>
+    <p>c</p>
+    <script>
+        alert($("p").eq(1).text());
+    </script>
+</body>
+<script>
+    $(function () {
+        var e = $("p").parents();
+        e.css("border", "2px solid red");
+    });
+</script>
+
+</html>
