@@ -69,9 +69,35 @@ $(function () {
  */
 $("#test").off("focus");
 
+//What will be the output after the div is clicked two times?
+//ماذا سيكون الناتج بعد النقر على div مرتين؟ <
 
+/*
+<div>1</div>
+<script>
+$("div").click(function() {
+  $("div").text($("div").text()+1);
+});
+</script>
+*/
+//111
 
+//Fill in the blanks to remove the "click" event handler from all <a> elements.
+//املأ الفراغات لإزالة معالج الحدث "click" من كافة العناصر <a>.
+$("a").off("click");
 
+//How many "a" characters will be output after the div is clicked three times?
+//كم عدد الأحرف "a" التي سيتم إخراجها بعد النقر على div ثلاث مرات؟
+/*
+ <div>a</div>
+<script>
+$("div").click(function() {
+  $("div").append("a");
+  $("div").off("click");
+});
+</script>
+ */
+//2
 
 
 
